@@ -1,0 +1,5 @@
+{
+  "name": "Roll This!",
+  "description": "A 3D physics environment where users can interact with D&D dice, pick them up, throw them, and watch them roll on a table.",
+  "requestFramePermissions": []
+}
