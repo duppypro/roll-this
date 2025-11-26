@@ -37,7 +37,7 @@ const DragManager: React.FC<DragManagerProps> = ({ dragRef, setDragTarget }) => 
 
   useFrame(() => {
     // Intersect the global raycaster (updated by R3F automatically) with our mathematical plane
-    if (raycaster.ray.intersectPlane(plane, intersection)) {
+    if (raycaster && raycaster.ray.intersectPlane(plane, intersection)) {
         cursorApi.position.set(intersection.x, LIFT_HEIGHT, intersection.z);
         cursorApi.velocity.set(0, 0, 0);
     }
